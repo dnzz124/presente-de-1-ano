@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Nosso Cantinho</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+</head>
+
+<body>
+
+    <!-- =========================================
+         FUNDO
+    ========================================== -->
+
+    <div class="background">
+
+        <div class="stars"></div>
+
+        <div class="aurora aurora-1"></div>
+        <div class="aurora aurora-2"></div>
+        <div class="aurora aurora-3"></div>
+
+        <div class="moon"></div>
+
+    </div>
+
+
+    <!-- =========================================
+         MÚSICA
+    ========================================== -->
+
+    <audio
+        id="backgroundMusic"
+        loop
+        preload="auto"
+    >
+        <source
+            src="audio/musica-fundo.mpeg"
+            type="audio/mpeg"
+        >
+    </audio>
+
+
+    <button
+        id="musicButton"
+        class="music-button"
+        aria-label="Tocar música"
+    >
+        ♪ Tocar música
+    </button>
+
+
+    <!-- =========================================
+         CABEÇALHO
+    ========================================== -->
+
+    <header class="site-header">
+
+        <h1>
+            Nosso Cantinho
+        </h1>
+
+        <p>
+            Um lugar feito de memórias, palavras e carinho.
+        </p>
+
+
+        <nav>
+
+            <button
+                onclick="changeSection('home')"
+            >
+                Início
+            </button>
+
+
+            <button
+                onclick="changeSection('letters')"
+            >
+                Cartas
+            </button>
+
+
+            <button
+                onclick="changeSection('memories')"
+            >
+                Memórias
+            </button>
+
+        </nav>
+
+    </header>
+
+
+    <!-- =========================================
+         CONTEÚDO
+    ========================================== -->
+
+    <main>
+
+
+        <!-- =====================================
+             INÍCIO
+        ====================================== -->
+
+        <section
+            id="home"
+            class="section active"
+        >
+
+            <div class="hero">
+
+                <span class="small-label">
+                    UM CANTINHO SÓ NOSSO
+                </span>
+
+
+                <h2>
+                    Onde cada lembrança
+                    <br>
+                    encontra seu lugar.
+                </h2>
+
+
+                <p>
+                    Entre estrelas, auroras e pequenas lembranças,
+                    este espaço guarda tudo aquilo que merece ser lembrado.
+                </p>
+
+
+                <button
+                    class="main-button"
+                    onclick="changeSection('letters')"
+                >
+                    Ler nossas cartas
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             CARTAS
+        ====================================== -->
+
+        <section
+            id="letters"
+            class="section"
+        >
+
+            <div class="section-title">
+
+                <span>
+                    ✦
+                </span>
+
+                <h2>
+                    Cartas
+                </h2>
+
+                <p>
+                    Palavras que ficaram guardadas.
+                </p>
+
+            </div>
+
+
+            <div
+                id="lettersGrid"
+                class="letters-grid"
+            ></div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             MEMÓRIAS
+        ====================================== -->
+
+        <section
+            id="memories"
+            class="section"
+        >
+
+            <div class="section-title">
+
+                <span>
+                    ✦
+                </span>
+
+                <h2>
+                    Memórias
+                </h2>
+
+                <p>
+                    Um pedacinho especial da nossa história.
+                </p>
+
+            </div>
+
+
+            <!-- IMAGEM ROXA -->
+
+            <div class="purple-image-card">
+
+                <img
+                    src="imagens/imagem-roxa.png"
+                    alt="Nossa lembrança"
+                >
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =========================================
+         GATO 1
+    ========================================== -->
+
+    <div
+        class="sleeping-cat cat-one"
+        aria-hidden="true"
+    >
+
+        <div class="cat">
+
+            <div class="cat-tail"></div>
+
+            <div class="cat-body"></div>
+
+            <div class="cat-head">
+
+                <i class="ear left"></i>
+                <i class="ear right"></i>
+
+                <i class="eye left"></i>
+                <i class="eye right"></i>
+
+                <i class="nose"></i>
+
+            </div>
+
+
+            <i class="paw left"></i>
+            <i class="paw right"></i>
+
+        </div>
+
+
+        <span class="zzz">
+            Z
+        </span>
+
+        <span class="zzz z2">
+            z
+        </span>
+
+    </div>
+
+
+
+    <!-- =========================================
+         GATO 2
+    ========================================== -->
+
+    <div
+        class="sleeping-cat cat-two"
+        aria-hidden="true"
+    >
+
+        <div class="cat">
+
+            <div class="cat-tail"></div>
+
+            <div class="cat-body"></div>
+
+            <div class="cat-head">
+
+                <i class="ear left"></i>
+                <i class="ear right"></i>
+
+                <i class="eye left"></i>
+                <i class="eye right"></i>
+
+                <i class="nose"></i>
+
+            </div>
+
+
+            <i class="paw left"></i>
+            <i class="paw right"></i>
+
+        </div>
+
+
+        <span class="zzz">
+            Z
+        </span>
+
+        <span class="zzz z2">
+            z
+        </span>
+
+    </div>
+
+
+
+    <!-- =========================================
+         MODAL DAS CARTAS
+    ========================================== -->
+
+    <div
+        id="letterModal"
+        class="modal"
+    >
+
+        <div class="modal-content">
+
+            <button
+                class="close"
+                onclick="closeLetter()"
+            >
+                ×
+            </button>
+
+
+            <span id="modalDate"></span>
+
+
+            <h2 id="modalTitle"></h2>
+
+
+            <div id="modalText"></div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =========================================
+         JAVASCRIPT
+    ========================================== -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
