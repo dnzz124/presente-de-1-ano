@@ -29,16 +29,26 @@ Com carinho,
 
 
     {
-        titulo: "Lembranças",
+        titulo: "Lembranças e sonhos",
 
-        data: "02.09.2026",
+        data: "10.09.2026",
 
         texto: `
-Nós fazendo nossas coisas do dia a dia, seja dormindo enquanto uma canta alguma coisa, ou desenhando e a outra pensando em algum plano de aula ou até mesmo episódio de uma das campanhas.
+Nós fazendo nossas coisas do dia a dia, sendo os melhores momentos, é conversando sobre coisas aleatórias, rindo de algo, ou fazendo rank de melhor personagens.
 
-São essas coisas simples que definem nosso relacionamento.
+São essas coisas simples que definem nosso relacionamento. Coisas simples que fazem dele o melhor. Não temos um relacionamento perfeito, mas ele é maravilhoso tendo em vista a vivência de ambas. 
 
-Escrever algo para você, minha uvinha, envolve muito mais que uma simples carta de amor. É o sentimento de algo a mais que não sei explicar, é o desenvolvimento da história que quero ter contigo.
+Gosto quando conversa comigo, quando uma doente a outra tenta ajudar, os puxões de orelha que se tornaram só mais um motivo para rir.
+
+Amo teu corpo, amo teu jeito, suas manias principalmente.
+
+Escrever algo para você, minha uvinha, envolve muito mais que uma simples carta de amor. É o sentimento de algo a mais que não sei explicar,
+
+é o desenvolvimento da história que quero ter contigo. Uma história que hoje (10/09/2026), quase completa 1 ano, mas de fato que para gente completou esse um ano.
+
+Um ano de desenvolvimento, um ano de momentos compartilhados. Mal espero para novembro, quero que chegue para poder finalmente poder te ver além de uma tela.
+
+Me pego imaginando a gente, daqui uns anos, com a liz e o tutu, a gente vivendo nossa vida tranquilamente na nossa casinha. Também imagino como seria nosso casamento e nosso apartamento que tanto tenho vontade de ver.
 
 ♡
 `
